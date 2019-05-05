@@ -33,12 +33,14 @@ body {
 }
 .card-img-top2{
 		width:50%;
+		position: center;
 		border-top-left-radius:calc(.25rem - 1px);
 		border-top-right-radius:calc(.25rem - 1px)
 		}
 .card-img-top3{
 		width:75%;
 		padding-top: 20px;
+		position: center;
 		border-top-left-radius:calc(.25rem - 1px);
 		border-top-right-radius:calc(.25rem - 1px)
 		}
