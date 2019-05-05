@@ -31,3 +31,14 @@ body {
     color: rgba(0, 0, 0, 0.87);
     background: #ddeaf3;
 }
+.card-img-top2{
+		width:50%;
+		border-top-left-radius:calc(.25rem - 1px);
+		border-top-right-radius:calc(.25rem - 1px)
+		}
+.card-img-top3{
+		width:75%;
+		padding-top: 20px;
+		border-top-left-radius:calc(.25rem - 1px);
+		border-top-right-radius:calc(.25rem - 1px)
+		}
