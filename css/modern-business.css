@@ -33,7 +33,7 @@ body {
 }
 .card-img-top2{
 		width:50%;
-		height: auto;
+		background-size: contain;
 		margin: auto;
 		border-top-left-radius:calc(.25rem - 1px);
 		border-top-right-radius:calc(.25rem - 1px)
