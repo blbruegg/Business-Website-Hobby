@@ -28,6 +28,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <meta name="description" content="Cryptocurrency Mining knowledge repository by Smartcoinpool.  Information on mining programs, pools, payment schemes, tokens, coins, exchanges, merged mining, and efficiency."/>
   <meta name="author" content="BLBRUEGG"/>
+  <script src="https://js.braintreegateway.com/web/dropin/1.18.0/js/dropin.min.js"></script>
 
   <title>Smartcoinpool.Org Repository</title>
 
@@ -164,6 +165,22 @@
             <li class="list-group-item">Vestibulum at eros</li>
             <li class="list-group-item">
               <a href="#" class="btn btn-primary">Sign Up!</a>
+			  <div id="dropin-container"></div>
+				<button id="submit-button">Request payment method</button>
+					<script>
+					var button = document.querySelector('#submit-button');
+
+					braintree.dropin.create({
+					authorization: 'CLIENT_TOKEN_FROM_SERVER',
+					container: '#dropin-container'
+					}, function (createErr, instance) {
+					button.addEventListener('click', function () {
+					instance.requestPaymentMethod(function (err, payload) {
+					// Submit payload.nonce to your server
+					});
+				});
+			});
+  </script>
             </li>
           </ul>
         </div>
